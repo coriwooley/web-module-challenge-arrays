@@ -104,8 +104,9 @@ Use the removeLastFlavor function below to do the following:
 //1 parameter array. remove last item and return array. pop()
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(array){
+ array.pop();
+ return array
 }
 
 
@@ -120,7 +121,7 @@ Use the getFlavorByIndex function below to do the following:
 
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
-//2 parameters array, index ... return array[index]
+
 
 function getFlavorByIndex(array, number){
   return array[number]

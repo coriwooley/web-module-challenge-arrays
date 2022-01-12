@@ -63,9 +63,14 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
 
+//1 parameter array, to see if length of array = 31 return true else return false, condintional
 
-function is31Flavors(/*your code here*/){
- /*your code here*/
+function is31Flavors(array){
+ if (array.length === 31) {
+   return true;
+ } else {
+   return false;
+ }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -79,11 +84,13 @@ Use the addFlavor function below to do the following:
 
   For example: addFlavor(originalFlavors, "Rainbow Sherbert") should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
+//2 parameter array, flavor... add new flavor to front of array unshift...return resulting array
 
-
-function addFlavor(/*your code here*/){
- /*your code here*/
+function addFlavor(array, flavor){
+ array.unshift(flavor);
+ return array
 }
+console.log(addFlavor(originalFlavors, 'Rainbow Sherbert'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -96,6 +103,8 @@ Use the removeLastFlavor function below to do the following:
 
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
+//1 parameter array. remove last item and return array. pop()
+
 
 function removeLastFlavor(/*your code here*/){
  /*your code here*/
@@ -113,6 +122,7 @@ Use the getFlavorByIndex function below to do the following:
 
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
+//2 parameters array, index ... return array[index]
 
 function getFlavorByIndex(/*your code here*/){
   /*your code here*/
@@ -133,6 +143,7 @@ Use the removeFlavorByName function below to do the following:
 
   HINT: You can use .splice() for this
 */
+//2 parameter array and flavor...splice... ===...loop through array.write conditional if index matches flavor... return array
 
 function removeFlavorByName(/*your code here*/){
   /*your code here*/
@@ -159,7 +170,7 @@ Use the filterByWord function below to do the following:
 
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
-
+//2 parameter..includes...loop through array, if includes flavor push to new filTERED array and return filetered array
 function filterByWord(/*your code here*/){
   /*your code here*/
 }

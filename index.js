@@ -122,8 +122,8 @@ Use the getFlavorByIndex function below to do the following:
 */
 //2 parameters array, index ... return array[index]
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(array, number){
+  return array[number]
 }
 
 
@@ -141,8 +141,6 @@ Use the removeFlavorByName function below to do the following:
 
   HINT: You can use .splice() for this
 */
-//2 parameter array and flavor...splice... ===...loop through array.write conditional if index matches flavor... return array
-
 function removeFlavorByName(array, flavor){
   for (let i = 0; i < array.length; i++){
     if (array[i] === flavor){
@@ -151,6 +149,7 @@ function removeFlavorByName(array, flavor){
   }
   return array
 }
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 

@@ -143,11 +143,14 @@ Use the removeFlavorByName function below to do the following:
 */
 //2 parameter array and flavor...splice... ===...loop through array.write conditional if index matches flavor... return array
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(array, flavor){
+  for (let i = 0; i < array.length; i++){
+    if (array[i] === flavor){
+      array.splice(i, 1)
+    }
+  }
+  return array
 }
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
@@ -168,9 +171,7 @@ Use the filterByWord function below to do the following:
 
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
-//2 parameter..includes...loop through array, if includes flavor push to new filTERED array and return filetered array
-//function filterByWord(/*your code here*/){
-  /*your code here*/
+
 
   function filterByWord(array, flavor){
     let filteredArray = []

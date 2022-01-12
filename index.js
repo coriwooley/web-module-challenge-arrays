@@ -63,8 +63,6 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
 
-//1 parameter array, to see if length of array = 31 return true else return false, condintional
-
 function is31Flavors(array){
  if (array.length === 31) {
    return true;
@@ -84,7 +82,7 @@ Use the addFlavor function below to do the following:
 
   For example: addFlavor(originalFlavors, "Rainbow Sherbert") should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
-//2 parameter array, flavor... add new flavor to front of array unshift...return resulting array
+
 
 function addFlavor(array, flavor){
  array.unshift(flavor);
@@ -171,10 +169,20 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 //2 parameter..includes...loop through array, if includes flavor push to new filTERED array and return filetered array
-function filterByWord(/*your code here*/){
+//function filterByWord(/*your code here*/){
   /*your code here*/
-}
 
+  function filterByWord(array, flavor){
+    let filteredArray = []
+    for (let i = 0; i < array.length; i++){
+      if (array[i].includes(flavor)){
+          filteredArray.push(array[i]);
+          }
+    }
+    return filteredArray
+  }
+  
+  console.log(filterByWord(originalFlavors,'Chocolate'))
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
